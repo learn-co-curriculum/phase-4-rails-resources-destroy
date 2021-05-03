@@ -72,7 +72,8 @@ And since we're now using all five RESTful routes, we can omit the `only` option
 resources :birds
 ```
 
-Running `rails routes` will show us all the RESTful routes in our application:
+Running `rails routes` will show us all the RESTful routes in our application,
+plus our custom route:
 
 ```txt
 Prefix Verb   URI Pattern               Controller#Action
