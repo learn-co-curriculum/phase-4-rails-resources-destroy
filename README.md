@@ -66,6 +66,25 @@ our resources:
 resources :birds, only: [:index, :show, :create, :update, :destroy]
 ```
 
+And since we're now using all five RESTful routes, we can omit the `only` option:
+
+```rb
+resources :birds
+```
+
+Running `rails routes` will show us all the RESTful routes in our application:
+
+```txt
+Prefix Verb   URI Pattern               Controller#Action
+ birds GET    /birds(.:format)          birds#index
+       POST   /birds(.:format)          birds#create
+  bird GET    /birds/:id(.:format)      birds#show
+       PATCH  /birds/:id(.:format)      birds#update
+       PUT    /birds/:id(.:format)      birds#update
+       DELETE /birds/:id(.:format)      birds#destroy
+       PATCH  /birds/:id/like(.:format) birds#increment_likes
+```
+
 We'll also need to add a `destroy` action to our controller where we'll be
 deleting the bird from the database:
 
