@@ -1,4 +1,4 @@
-# Delete Resource - Destroy
+# Rails Resource Routing: Destroy
 
 ## Learning Goals
 
