@@ -57,10 +57,10 @@ This will download all the dependencies for our app and set up the database.
 
 ## Deleting a Bird
 
-We're at the last step on our journey to becoming CRUD masters! Our goal is to
+We're at the last step on our journey to becoming CRUD experts! Our goal is to
 give users the ability to delete birds via the API. To start, we'll need to set
-up a route to handle a `DELETE /birds/:id`. We can do so by adding `:destroy` to
-our resources:
+up a route to handle a `DELETE /birds/:id` request. We can do so by adding
+`:destroy` to our resources:
 
 ```rb
 resources :birds, only: [:index, :show, :create, :update, :destroy]
@@ -112,8 +112,8 @@ a 204 status code, indicating that the server has successfully fulfilled the
 request and that there is no content to send in the response. We're also not
 sending any payload of data in the body of the request.
 
-One thing to watch out for: if you the API doesn't return JSON data, and you try
-to read the response data from a `fetch` request, you will get an error:
+One thing to watch out for: if the API doesn't return JSON data, and you try to
+read the response data from a `fetch` request, you will get an error:
 
 ```js
 fetch("http://localhost:3000/birds/3", {
