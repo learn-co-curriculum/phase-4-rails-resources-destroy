@@ -55,6 +55,10 @@ This will download all the dependencies for our app and set up the database.
   </tr>
 </table>
 
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XmTWuLphloM?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 ## Deleting a Bird
 
 We're at the last step on our journey to becoming CRUD experts! Our goal is to
