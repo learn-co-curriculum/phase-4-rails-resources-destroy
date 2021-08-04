@@ -16,44 +16,13 @@ rails db:migrate db:seed
 
 This will download all the dependencies for our app and set up the database.
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <tr>
-    <th>HTTP Verb</th>
-    <th>Path</th>
-    <th>Controller#Action</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>GET</td>
-    <td>/birds</td>
-    <td>birds#index</td>
-    <td>Show all birds</td>
-  </tr>
-  <tr>
-    <td>POST</td>
-    <td>/birds</td>
-    <td>birds#create</td>
-    <td>Create a new bird</td>
-  </tr>
-  <tr>
-    <td>GET</td>
-    <td>/birds/:id</td>
-    <td>birds#show</td>
-    <td>Show a specific bird</td>
-  </tr>
-  <tr>
-    <td>PATCH or PUT</td>
-    <td>/birds/:id</td>
-    <td>birds#update</td>
-    <td>Update a specific bird</td>
-  </tr>
-  <tr>
-    <td><strong>DELETE</strong></td>
-    <td><strong>/birds/:id</strong></td>
-    <td><strong>birds#destroy</strong></td>
-    <td><strong>Delete a specific bird</strong></td>
-  </tr>
-</table>
+| HTTP Verb | Path | Controller#Action | Description |
+| --- | --- | --- | --- |
+| GET | /birds | birds#index | Show all birds |
+| POST | /birds | birds#create | Create a new bird |
+| GET | /birds/:id | birds#show | Show a specific bird |
+| PATCH or PUT | /birds/:id | birds#update | Update a specific bird |
+| DELETE | /birds/:id | birds#destroy | Delete a specific bird |
 
 ## Video Walkthrough
 
