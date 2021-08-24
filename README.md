@@ -9,20 +9,20 @@
 In this lesson, we'll continue working on our Bird API by adding a `destroy`
 action, so that clients can use our API to delete birds. To get set up, run:
 
-```sh
-bundle install
-rails db:migrate db:seed
+```console
+$ bundle install
+$ rails db:migrate db:seed
 ```
 
 This will download all the dependencies for our app and set up the database.
 
-| HTTP Verb | Path | Controller#Action | Description |
-| --- | --- | --- | --- |
-| GET | /birds | birds#index | Show all birds |
-| POST | /birds | birds#create | Create a new bird |
-| GET | /birds/:id | birds#show | Show a specific bird |
-| PATCH or PUT | /birds/:id | birds#update | Update a specific bird |
-| DELETE | /birds/:id | birds#destroy | Delete a specific bird |
+| HTTP Verb    | Path       | Controller#Action | Description            |
+| ------------ | ---------- | ----------------- | ---------------------- |
+| GET          | /birds     | birds#index       | Show all birds         |
+| POST         | /birds     | birds#create      | Create a new bird      |
+| GET          | /birds/:id | birds#show        | Show a specific bird   |
+| PATCH or PUT | /birds/:id | birds#update      | Update a specific bird |
+| DELETE       | /birds/:id | birds#destroy     | Delete a specific bird |
 
 ## Video Walkthrough
 
@@ -48,7 +48,8 @@ resources :birds
 Running `rails routes` will show us all the RESTful routes in our application,
 plus our custom route:
 
-```txt
+```console
+$ rails routes
 Prefix Verb   URI Pattern               Controller#Action
  birds GET    /birds(.:format)          birds#index
        POST   /birds(.:format)          birds#create
