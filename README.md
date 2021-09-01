@@ -16,13 +16,13 @@ $ rails db:migrate db:seed
 
 This will download all the dependencies for our app and set up the database.
 
-| HTTP Verb    | Path       | Controller#Action | Description            |
-| ------------ | ---------- | ----------------- | ---------------------- |
-| GET          | /birds     | birds#index       | Show all birds         |
-| POST         | /birds     | birds#create      | Create a new bird      |
-| GET          | /birds/:id | birds#show        | Show a specific bird   |
-| PATCH or PUT | /birds/:id | birds#update      | Update a specific bird |
-| DELETE       | /birds/:id | birds#destroy     | Delete a specific bird |
+| HTTP Verb        | Path           | Controller#Action     | Description                |
+| ---------------- | -------------- | --------------------- | -------------------------- |
+| GET              | /birds         | birds#index           | Show all birds             |
+| POST             | /birds         | birds#create          | Create a new bird          |
+| GET              | /birds/:id     | birds#show            | Show a specific bird       |
+| PATCH or PUT     | /birds/:id     | birds#update          | Update a specific bird     |
+| **DELETE**       | **/birds/:id** | **birds#destroy**     | **Delete a specific bird** |
 
 ## Video Walkthrough
 
