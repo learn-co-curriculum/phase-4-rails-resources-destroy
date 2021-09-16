@@ -117,6 +117,13 @@ Make sure to test these out in Postman to see the difference between using
 Now that we've covered the Delete action, you can perform all four CRUD actions
 with Rails and do so following RESTful conventions!
 
+## Check For Understanding
+
+Before you move on, make sure you can answer the following question:
+
+1. What options did you learn about in this lesson for returning information to
+   your users about the status of a delete request?
+
 ## Resources
 
 - [The `head` method](https://api.rubyonrails.org/v6.1.3.1/classes/ActionController/Head.html#method-i-head)
